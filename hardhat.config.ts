@@ -26,7 +26,12 @@ const config: HardhatUserConfig = {
       chainId: 25,
       url: 'https://evm.cronos.org',
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],      
+    },
+    localhost: {
+      chainId: 1337,
+      url: 'http://127.0.0.1:8546',      
     }
+
     // fantom: {
     //   chainId: 250,
     //   url: 'https://rpcapi.fantom.network',

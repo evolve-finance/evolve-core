@@ -160,21 +160,21 @@ contract Factory is IFactory {
         if (!oracleInitialized) evoPriceOracle.initialize(uniswapV2Pair);
 
         ICollateral(lPool.collateral)._initialize(
-            "Evo Collateral",
-            "cEvo",
+            "Evolve Collateral",
+            "cEvolve",
             uniswapV2Pair,
             lPool.borrowable0,
             lPool.borrowable1
         );
         IBorrowable(lPool.borrowable0)._initialize(
-            "Evo Borrowable",
-            "bEvo",
+            "Evolve Borrowable",
+            "bEvolve",
             token0,
             lPool.collateral
         );
         IBorrowable(lPool.borrowable1)._initialize(
-            "Evo Borrowable",
-            "bEvo",
+            "Evolve Borrowable",
+            "bEvolve",
             token1,
             lPool.collateral
         );

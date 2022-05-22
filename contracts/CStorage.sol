@@ -5,6 +5,6 @@ contract CStorage {
 	address public borrowable0;
 	address public borrowable1;
 	address public evoPriceOracle;
-	uint public safetyMarginSqrt = 1.58113883e18; //safetyMargin: 250%
-	uint public liquidationIncentive = 1.04e18; //4%
+	uint public safetyMarginSqrt = 1.41421356e18; //safetyMargin: 200%
+	uint public liquidationIncentive = 1.02e18; //2%
 }
